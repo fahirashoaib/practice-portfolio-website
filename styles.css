@@ -20,3 +20,8 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
 }
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
