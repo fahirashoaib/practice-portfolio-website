@@ -8,20 +8,32 @@ body {
 nav ul {
     display: flex;
     justify-content: space-around;
-    background-color: #333;
     padding: 20px;
     list-style: none;
     margin: 0;
-    height: 30px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
     padding: 10px;
 }
 
 section {
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
+}
+
+#skills ul {
+    list-style-type: disc;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: space-between;
+    }
+
+    section {
+        margin: 20px auto;
+        max-width: 800px;
+    }
 }
