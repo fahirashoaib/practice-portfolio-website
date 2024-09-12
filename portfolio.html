@@ -3,31 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Professional profile showcasing skills, projects, awards, certifications, and more.">
-    <meta name="keywords" content="Professional, Profile, Skills, Projects, Certifications, Awards">
     <title>My Professional Portfolio </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#awards">Learning</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#" id="change-language">Language</a></li>
-            </ul>
-        </nav>
+    <header class="my-header">
+        <h1 class="owner">Fahira</h1>
+        <div class="btn-nav-alignment">
+            <div class="dropdown">
+                <button id="dropdownBtn" class="dropdown-btn">
+                    &#9776; <!-- Unicode for a menu icon -->
+                </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <a href="#learning">Learning</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#change-language">Language</a>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-items">
+                    <li class="list-item"><a href="about.html" class="list-text">About</a></li>
+                    <li class="list-item"><a href="contact.html"  class="list-text">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="main">
-        <h1>Hi, from Fahira!</h1>
-        <p>Explore my skills, projects, awards, and certifications below.</p>
+    <header class="another-header">
+        <p class="another-header-text1">Fahira Shoaib</p>
+        <p class="another-header-text2">[She / her]</p>
+        <p class="another-header-text">A Computer Science student at ITU and eager to learn and try new things.</p>
+    </header>
+    <section id="learning">
+        <h2>Learning</h2>
+        <div>
+            <h3>Courses</h3>
+            <p>Courses I've taken:</p>
+            <ul>
+                <li>Frontend Masters: Complete Intro to Web Development V3 by Brian Holt</li>
+                <li>Harvard University: HarvardCS50 by David J. Malan</li>
+                <li>Frontend Masters: The last Algorithms course you'll need by ThePrimeagen</li>
+                <li>FreeCodeCamp: HTML, CSS, Javascript</li>
+                <li>Other courses are in progress...</li>
+            </ul>
+        </div>
+        <div></div>
+            <h3>Experience</h3>
+            <p>What I've learned practically: </p>
+            <ul>
+                <li>Apprenticeship in Game designing from scratch in Unity at Mindstorm Studios</li>
+                <li>Coderush online coding competitin experience</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <div>
+                <p>Developed these using HTML, CSS, and JavaScript:</p>
+                <ul>
+                    <li>Cafe menu</li>
+                    <li>Magazine</li>
+                    <li>Registration Form</li>
+                    <li>Role Playing Game</li>
+                </ul>
+            </div>
+            <div>
+                <p>Developed using Python:</p>
+                <ul>
+                    <li>Paint App</li>
+                </ul>
+            </div>
+            <div>
+                <p>Developed using C#:</p>
+                <ul>
+                    <li>Calculator</li>
+                </ul>
+            </div>
+            <div>
+            <p>Developed using C++:</p>
+                <ul>
+                    <li>Excel Sheet</li>
+                    <li>DOS</li>
+                    <li>Chess game</li>
+                    <li>Snake Game</li>
+                    <li>Simple Solitaire Game</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="skills">
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
         <div class="my-skills">
             <h3>Soft Skills</h3>
             <ul>
@@ -53,7 +123,7 @@
                         <li>HackerRank</li>
                     </ul>
                 </li>
-                <li>Foreign Language
+                <li>Foreign Languages
                     <ul>
                         <li>Arabic (learning in progress)</li>
                         <li>Turkish (learning in progress)</li>
@@ -63,94 +133,8 @@
             </ul>
         </div>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <p>Developed these using HTML, CSS, and JavaScript:</p>
-                <ul>
-                    <li>Cafe menu</li>
-                    <li>Magazine</li>
-                    <li>Registration Form</li>
-                    <li>Role Playing Game</li>
-                </ul>
-            </div>
-            <div class="project">
-                <p>Developed using Python:</p>
-                <ul>
-                    <li>Paint App</li>
-                </ul>
-            </div>
-            <div class="project">
-                <p>Developed using C#:</p>
-                <ul>
-                    <li>Calculator</li>
-                </ul>
-            </div>
-            <div class="project">
-            <p>Developed using C++:</p>
-                <ul>
-                    <li>Excel Sheet</li>
-                    <li>DOS</li>
-                    <li>Chess game</li>
-                    <li>Snake Game</li>
-                    <li>Simple Solitaire Game</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="awards">
-        <h2>Courses and Experience</h2>
-        <div class="courses">
-            <p>Courses I've taken:</p>
-            <ul>
-                <li>Frontend Masters: Complete Intro to Web Development V3 by Brian Holt</li>
-                <li>Harvard University: HarvardCS50 by David J. Malan</li>
-                <li>Frontend Masters: The last Algorithms course you'll need by ThePrimeagen</li>
-                <li>FreeCodeCamp: HTML, CSS, Javascript</li>
-                <li>Other courses are in progress...</li>
-            </ul>
-        </div>
-        <div class="experience"></div>
-            <p>What I've learned practically: </p>
-            <ul>
-                <li>Apprenticeship at Game designing from scratch at Mindstorm Studios</li>
-                <li>Coderush, online coding competitin experience</li>
-            </ul>
-        </div>
-    </section>
-    <section id="video">
-        <h2>Video Content</h2>
-        <video controls>
-            <source src="intro.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-    <section id="social-media">
-        <h2>Social Media</h2>
-        <div id="social-feed"></div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can also contact me at: 
-            <ul>
-                <li><a href="https://github.com/fahiraAsh">Github</a></li>
-                <li><a href="https://linkedin.com/">LinkedIn</a></li>
-                <li><a href="https://instagram.com/">Instagram</a></li>
-            </ul>
-        </p>
-        <form>
-            <p>You can also contact me via email:</p>
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+    <footer class="my-footer">
+        <p>&copy; 2024 Fahira Shoaib</p>
+    </footer>
 </body>
 </html>
