@@ -1,20 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-nav ul {
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #f2f7fc;
+    background-color: #111215;
+    font-family: Poppins, sans-serif;
+}
+
+.my-header{
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    list-style: none;
-    margin: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
+    justify-content: space-between;
     padding: 10px;
     width: 100%;
     height: 82px;
@@ -46,7 +48,7 @@ nav ul li a {
     padding: 5px 30px 10px 20px;
 }
 
-.my-heading{
+.my-heading{ /*Add this class*/
     font-size: 40px;
     font-family: Pirata One, monospace, sans-serif;
     padding: 10px 20px;
@@ -54,21 +56,140 @@ nav ul li a {
 }
 
 section {
+    padding: 20px;
+}
+
+.align-text{
+    padding: 20px;
+}
+
+.my-text{
+    text-align: center;
+    text-decoration: none;
+    color:#f2f7fc;
+    padding: 0 70px;
+}
+
+.center-text{
+    text-align: left;
+    font-size: 20px;
+    padding: 5px 125px 10px 147px;
+}
+
+.my-input{
     padding: 10px;
-    margin: 10px;
+    margin: 20px 0 0 0;
+    background-color: #111215;
+    border: none;
+    border-bottom: 5px solid #f2f7fc;
+    color: #f2f7fc;
+    width: 300px;
+    display: block;
 }
 
-#skills ul {
-    list-style-type: disc;
+.submit-button{
+    padding: 10px 50px;
+    margin: 40px 70px 10px 70px;
+    background-color: #368ef3;
+    border: none;
+    border-radius: 5px;
 }
 
-@media (min-width: 768px) {
-    nav ul {
-        justify-content: space-between;
-    }
+.center-icons{
+    display: flex;
+    padding: 10px;
+}
 
-    section {
-        margin: 20px auto;
-        max-width: 800px;
-    }
+.move-to-top{
+    border: 2px solid #f2f7fc;
+    margin: 0 15px;
+    padding: 30px;
+}
+
+.icon-align{
+    background-color: #f2f7fc;
+    margin: 30px;
+    height:30px;
+    width: 30px;
+    margin: 0 25px;
+    border-radius: 50px;
+}
+
+.icon-box{
+    border: 2px solid #f2f7fc;
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.my-form{
+    padding: 10px;
+}
+
+.owner{
+    font-family: Pirata One, monospace, sans-serif;
+    padding: 0 20px;
+}
+
+.nav-bar{
+    padding: 10px 0;
+}
+
+.nav-items{
+    display: flex;
+}
+
+.list-item{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.list-text{
+    text-decoration: none;
+    color: #f2f7fc;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #111215;
+    color: #f2f7fc;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f2f7fc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #111215;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #368ef3; /* changed bg color*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btn-nav-alignment{
+    display: flex;
+}
+.my-footer{
+    padding:20px;
+    text-align: center;
 }
