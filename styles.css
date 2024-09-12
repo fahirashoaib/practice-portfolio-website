@@ -48,7 +48,7 @@ body{
     padding: 5px 30px 10px 20px;
 }
 
-.my-heading{ /*Add this class*/
+.my-heading{
     font-size: 40px;
     font-family: Pirata One, monospace, sans-serif;
     padding: 10px 20px;
