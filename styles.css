@@ -16,6 +16,41 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     padding: 10px;
+    width: 100%;
+    height: 82px;
+    top: 0;
+}
+
+.another-header{
+    height: 500px;
+}
+
+.another-header-text1,.another-header-text2{
+    font-family: Pirata One, monospace, sans-serif;
+}
+
+.another-header-text1{
+    font-size: 60px;
+    padding: 140px 20px 10px 20px;
+    font-weight: bold;
+}
+
+.another-header-text2{
+    color: #368ef3;
+    font-size: 40px;
+    padding: 10px 20px 0 20px;
+}
+
+.another-header-text
+{
+    padding: 5px 30px 10px 20px;
+}
+
+.my-heading{
+    font-size: 40px;
+    font-family: Pirata One, monospace, sans-serif;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 section {
