@@ -21,124 +21,14 @@ body{
 .my-header{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    width: 100%;
-    height: 82px;
-    top: 0;
-}
-
-.another-header{
-    height: 500px;
-}
-
-.another-header-text1,.another-header-text2{
-    font-family: Pirata One, monospace, sans-serif;
-}
-
-.another-header-text1{
-    font-size: 60px;
-    padding: 140px 20px 10px 20px;
-    font-weight: bold;
-}
-
-.another-header-text2{
-    color: #368ef3;
-    font-size: 40px;
-    padding: 10px 20px 0 20px;
-}
-
-.contact-body{
-
-}
-
-.another-header-text
-{
-    padding: 5px 30px 10px 20px;
-}
-
-.my-heading{ /*Add this class*/
-    font-size: 40px;
-    font-family: Pirata One, monospace, sans-serif;
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-}
-
-.align-text{
-    padding: 20px;
-}
-
-.my-text{
-    text-align: center;
-    text-decoration: none;
-    color:#f2f7fc;
-    padding: 0 80px;
-}
-
-.center-text{
-    text-align: left;
-    font-size: 20px;
-    padding: 5px 46vw 15px;
-}
-
-.my-input{
-    padding: 10px;
-    margin: 20px 0 0 0;
-    background-color: #111215;
-    border: none;
-    border-bottom: 5px solid #f2f7fc;
-    color: #f2f7fc;
-    width: 86vw;
-    display: block;
-}
-
-.submit-button{
-    padding: 10px 70px;
-    margin: 40px 86px 10px 86px;
-    background-color: #368ef3;
-    border: none;
-    border-radius: 5px;
-}
-
-.center-icons{ 
-    display: flex;
-    padding: 30px 10px 20px;
-    justify-content: center;
-}
-
-.move-to-top{
-    border: 2px solid #f2f7fc;
-    margin: 0 40px;
-    padding: 30px;
-    height: 10px;
-    width: auto;
-}
-
-.icon-align{
-    background-color: #f2f7fc;
-    margin: 30px;
-    height:30px;
-    width: 30px;
-    margin: 0 25px;
-    border-radius: 50px;
-}
-
-.icon-box{
-    border: 2px solid #f2f7fc;
-    margin: 0 20px;
-    padding: 10px 0;
-}
-
-.my-form{
-    padding: 10px;
+    padding: 10px 40px;
 }
 
 .owner{
     font-family: Pirata One, monospace, sans-serif;
-    padding: 0 20px;
+    padding: 0 18px;
+    font-size: 45px;
+    font-weight: unset;
 }
 
 .nav-bar{
@@ -199,8 +89,157 @@ section {
 
 .btn-nav-alignment{
     display: flex;
+    padding: 0 18px;
 }
-.my-footer{
-    padding:20px;
+
+.another-header{
+    margin: 10px;
+    padding: 130px 20px;
+}
+
+.another-header-text1,.another-header-text2{
+    font-family: Pirata One, monospace, sans-serif;
+}
+
+.another-header-text1{
+    font-size: 105px;
+    padding:20px 0;
+    font-weight: bold;
+}
+
+.another-header-text2{
+    color: #368ef3;
+    font-size: 50px;
+    padding: 0px 10px;
+}
+
+.another-header-text
+{
+    padding: 10px 10px;
+    font-size:25px;
+    line-height: 2;
+}
+
+.sub-heading{
+    font-size: 60px;
+    font-family: Pirata One, monospace, sans-serif;
+    padding: 20px;
+}
+
+section {
+    padding: 130px 0;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-box{
+    border: 2px solid #f2f7fc;
+    line-height: 2;
+    padding: 5vw;
+    margin: 20px;
+    height: 40vh;
+    width: 40vw;
+}
+
+.my-image{
+    object-fit: contain;
+    width: 40vw;
+    height: 40vh;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.my-container{
+    display: flex;
+}
+
+.my-container-box{
+    line-height: 2;
+    padding: 30px;
     text-align: center;
+}
+
+.navigation{
+    color:#f2f7fc;
+    text-decoration: none;
+}
+
+.my-box{
+    background-color: #368ef3;
+    padding: 10px 20px;
+    margin: 40px 10vw 10px;
+    border-radius: 7px;
+}
+
+.align-text{
+    padding: 20px;
+}
+
+.my-text{
+    text-align: center;
+    text-decoration: none;
+    color:#f2f7fc;
+}
+
+
+.my-input{
+    padding: 10px;
+    margin: 20px 0 0 0;
+    background-color: #111215;
+    border: none;
+    border-bottom: 5px solid #f2f7fc;
+    color: #f2f7fc;
+    width: 86vw;
+    display: block;
+}
+
+.submit-button{
+    padding: 10px 65px;
+    margin: 55px 0 10px 0;
+    background-color: #368ef3;
+    border: none;
+    border-radius: 5px;
+}
+
+.center-icons{ 
+    display: flex;
+    padding: 30px 10px 20px;
+    justify-content: center;
+}
+
+.move-to-top{
+    border: 2px solid #f2f7fc;
+    margin: 0 38px;
+    padding: 12px 73px;
+    height: 55px;
+    text-align: center;
+}
+
+.icon-align{
+    background-color: #f2f7fc;
+    margin: 30px;
+    height:30px;
+    width: 30px;
+    margin: 0 25px;
+    border-radius: 50px;
+}
+
+.icon-box{
+    border: 2px solid #f2f7fc;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+
+.my-form{
+    padding: 10px;
+}
+
+.my-footer{
+    padding: 20px;
+    text-align: center;
+    margin: 33px 10px;
 }
