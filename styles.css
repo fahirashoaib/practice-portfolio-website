@@ -14,6 +14,10 @@ body{
     font-family: Poppins, sans-serif;
 }
 
+.contact-body{
+    height: 750px;
+}
+
 .my-header{
     display: flex;
     justify-content: space-between;
@@ -43,6 +47,10 @@ body{
     padding: 10px 20px 0 20px;
 }
 
+.contact-body{
+
+}
+
 .another-header-text
 {
     padding: 5px 30px 10px 20px;
@@ -67,13 +75,13 @@ section {
     text-align: center;
     text-decoration: none;
     color:#f2f7fc;
-    padding: 0 70px;
+    padding: 0 80px;
 }
 
 .center-text{
     text-align: left;
     font-size: 20px;
-    padding: 5px 125px 10px 147px;
+    padding: 5px 46vw 15px;
 }
 
 .my-input{
@@ -83,27 +91,30 @@ section {
     border: none;
     border-bottom: 5px solid #f2f7fc;
     color: #f2f7fc;
-    width: 300px;
+    width: 86vw;
     display: block;
 }
 
 .submit-button{
-    padding: 10px 50px;
-    margin: 40px 70px 10px 70px;
+    padding: 10px 70px;
+    margin: 40px 86px 10px 86px;
     background-color: #368ef3;
     border: none;
     border-radius: 5px;
 }
 
-.center-icons{
+.center-icons{ 
     display: flex;
-    padding: 10px;
+    padding: 30px 10px 20px;
+    justify-content: center;
 }
 
 .move-to-top{
     border: 2px solid #f2f7fc;
-    margin: 0 15px;
+    margin: 0 40px;
     padding: 30px;
+    height: 10px;
+    width: auto;
 }
 
 .icon-align{
@@ -117,8 +128,8 @@ section {
 
 .icon-box{
     border: 2px solid #f2f7fc;
-    margin: 0 5px;
-    padding: 10px;
+    margin: 0 20px;
+    padding: 10px 0;
 }
 
 .my-form{
