@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="description" content="Professional portfolio, showcasing projects, skills, and experience.">
     <meta name="keywords" content="portfolio, computer science, projects, HTML, CSS, JavaScript, C++, Python, ITU">
-
     <script src="script.js" defer></script>
+    <script async defer src="https://www.instagram.com/embed.js"></script>
 </head>
 <body>
     <header class="my-header">
@@ -25,6 +25,8 @@
                     <a href="#learning">Learning</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
+                    <a href="#my-video">Video</a>
+                    <a href="#my-social-feed">Social media feed</a>
                     <a href="#change-language">Language</a>
                 </div>
             </div>
@@ -69,7 +71,7 @@
         <h2 class="sub-heading">Projects</h2>
         <div class="container">
             <div class="container-box">
-                <p>Developed these using HTML, CSS, and JavaScript:</p>
+                <p>Developed these using HTML, CSS, and JavaScript during this summer 2024:</p>
                 <ul>
                     <li>Cafe menu</li>
                     <li>Magazine</li>
@@ -78,7 +80,7 @@
                 </ul>
             </div>
             <div class="container-box">
-                <p>Developed using Python:</p>
+                <p>Developed using Python in semester 2:</p>
                 <ul>
                     <li>Paint App</li>
                 </ul>
@@ -86,13 +88,13 @@
         </div>
         <div class="container">
             <div class="container-box">
-                <p>Developed using C#:</p>
+                <p>Developed using C# in semester 2:</p>
                 <ul>
                     <li>Calculator</li>
                 </ul>
             </div>
             <div class="container-box">
-            <p>Developed using C++:</p>
+            <p>Developed using C++ in semester 3:</p>
                 <ul>
                     <li>Excel Sheet</li>
                     <li>DOS</li>
@@ -137,6 +139,38 @@
                         </ul>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <section id="my-video">
+        <h2 class="sub-heading">About my university</h2>
+        <div class="container">
+            <iframe class="my-video" src="https://www.youtube.com/embed/cR4FyCFtr0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="my-social-feed">
+        <h2 class="sub-heading">Social feed</h2>
+        <div class="container">
+            <div class="my-media">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C_xm5POR7aG/" data-instgrm-version="14">
+                <a href="https://www.instagram.com/p/C_xm5POR7aG/"></a>
+            </blockquote>
+            </div>
+        </div>
+    </section>
+    <section id="change-language">
+        <h2 class="sub-heading">Language</h2>
+        <div class="container">
+            <div class="language-box">
+                <p id="quote" data-lang="en">"The only limit to our realization of tomorrow is our doubts of today."</p>
+                <p id="quote-es" data-lang="es" style="display: none;">"El único límite para nuestra realización de mañana son nuestras dudas de hoy."</p>
+                <p id="quote-fr" data-lang="fr" style="display: none;">"La seule limite à notre réalisation de demain est nos doutes d'aujourd'hui."</p>
+                <button class="langBtn">Change language</button>
+                <div id="languageContent" class="language-content">
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="es">Spanish</a>
+                    <a href="#" data-lang="fr">French</a>
+                </div>
             </div>
         </div>
     </section>
