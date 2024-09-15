@@ -8,14 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="description" content="Professional portfolio, showcasing projects, skills, and experience.">
+    <meta name="keywords" content="portfolio, computer science, projects, HTML, CSS, JavaScript, C++, Python, ITU">
+
     <script src="script.js" defer></script>
 </head>
 <body>
     <header class="my-header">
-        <h1 class="owner">Fahira Shoaib</h1>
+        <h1 class="owner">Fahira</h1>
         <div class="btn-nav-alignment">
             <div class="dropdown">
-                <img src="menu-icon.png" class="dropdown-btn"></img>
+                <button id="dropdownBtn">
+                    <img src="menu-icon.png" class="dropdown-btn" alt="menu-icon-image"></img>
+                </button>
                 <div id="dropdownContent" class="dropdown-content">
                     <a href="#learning">Learning</a>
                     <a href="#skills">Skills</a>
@@ -32,11 +37,13 @@
         </div>
     </header>
     <header class="another-header">
-        <p class="another-header-text1">Fahira Shoaib</p>
-        <p class="another-header-text2">[She / her]</p>
+        <div class="another-header-align">
+            <p class="another-header-text1">Fahira</p>
+            <p class="another-header-text2">[She / her]</p>
+        </div>
         <p class="another-header-text">A Computer Science student at Information Technology University of the Punjab (ITU). I'm eager to learn and try new things.</p>
     </header>
-    <section id="learning" class="my-learning">
+    <section id="learning">
         <h2 class="sub-heading">Learning</h2>
         <div  class="container">
             <div class="container-box">
@@ -99,19 +106,16 @@
     <section id="skills">
         <h2 class="sub-heading">Skills</h2>
         <div class="container">
-        <div class="container">
-            <div class="container-box">
+            <div class="container-box1">
                 <ul>
                     <li>Leadership</li>
                     <li>Teamwork</li>
                     <li>Communication (written)</li>
                     <li>Adaptability</li>
                 </ul>
-            </div>
-            <div class="container-box">
                 <ul>
                     <li>Programming
-                        <ul>
+                        <ul class="inner-list-items">
                             <li>Python</li>
                             <li>C++</li>
                             <li>HTML</li>
@@ -120,13 +124,13 @@
                         </ul>
                     </li>
                     <li>Problem Solving
-                        <ul>
+                        <ul class="inner-list-items">
                             <li>LeetCode</li>
                             <li>HackerRank</li>
                         </ul>
                     </li>
                     <li>Foreign Languages
-                        <ul>
+                        <ul class="inner-list-items">
                             <li>Arabic (learning in progress)</li>
                             <li>Turkish (learning in progress)</li>
                             <li>German (learning in progress)</li>
@@ -135,7 +139,29 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="follow-along">
+        <p class="sub-heading">Follow Along</p>
+        <div class="center-icons">
+            <div class="icon-box">
+                <div class="icon-align">
+                    <a href="https://github.com/"><img src="github.png" alt="github-icon" target="_blank"></a>
+                </div>
+            </div>
+            <div class="icon-box">
+                <div class="icon-align">
+                    <a href="https://instagram.com/"><img src="instagram.png" alt="instagram-icon" target="_blank"></a>
+                </div>
+            </div>
+            <div class="icon-box">
+                <div class="icon-align">
+                    <a href="https://linkedin.com/"><img src="linkedin.png" alt="linkedin-icon" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="move-to-top">
+            <a class="my-text" href="#top">back to top</a>
+        </div>
     </section>
     <footer class="my-footer">
         <p>&copy; 2024 Fahira Shoaib</p>
