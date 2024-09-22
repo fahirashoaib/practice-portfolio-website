@@ -203,23 +203,23 @@ function populateProfile(){
         window.instgrm.Embeds.process();
     }
 
-    const fbContainer = document.getElementById('post-container3');
-    fbContainer.innerHTML = ''; // Clear existing content
+    // const fbContainer = document.getElementById('post-container3');
+    // fbContainer.innerHTML = ''; // Clear existing content
 
-    profileData.fbPosts.forEach(post => {
-        const postWrapper = document.createElement('div');
-        postWrapper.className = 'my-media';
+    // profileData.fbPosts.forEach(post => {
+    //     const postWrapper = document.createElement('div');
+    //     postWrapper.className = 'my-media';
 
-        const div = document.createElement('div');
-        div.setAttribute('data-href', post.url);
+    //     const div = document.createElement('div');
+    //     div.setAttribute('data-href', post.url);
 
-        postWrapper.appendChild(div);
-        fbContainer.appendChild(postWrapper);
-    });
+    //     postWrapper.appendChild(div);
+    //     fbContainer.appendChild(postWrapper);
+    // });
 
 
-    if (window.FB) {
-        window.FB.XFBML.parse();
-    }
+    // if (window.FB) {
+    //     window.FB.XFBML.parse();
+    // }
 }
 window.onload = populateProfile;

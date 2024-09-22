@@ -26,7 +26,7 @@ body{
 .my-header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 15vw;
+    padding: 10px 18vw;
 }
 
 .owner{
@@ -37,7 +37,7 @@ body{
 }
 
 .nav-bar{
-    padding: 10px;
+    padding: 0px;
 }
 
 .nav-items{
@@ -57,7 +57,7 @@ body{
 .dropdown {
     position: relative;
     display: inline-block;
-    padding: 10px;
+    padding: 8px;
 }
 
 .dropdown-btn {
@@ -96,6 +96,7 @@ body{
 
 .btn-nav-alignment{
     display: flex;
+    padding: 10px;
 }
 
 .another-header{
@@ -109,7 +110,7 @@ body{
 
 .another-header-align{
     display: flex;
-    padding: 0 95px;
+    padding: 0 7vw;
 }
 
 .another-header-text1{
@@ -125,20 +126,28 @@ body{
 
 .another-header-text
 {
-    padding: 0 245px 0 120px;
-    font-size:25px;
-    line-height: 2;
+    padding: 0 30vw 0 8vw;
+    font-size:22px;
+    line-height: 1.5;
+}
+
+.container-text{
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px 0;
+    font-size: 20px;
 }
 
 .sub-heading{
-    font-size: 60px;
+    font-size: 65px;
+    font-weight: normal;
     font-family: Pirata One, monospace, sans-serif;
     padding: 20px;
 }
 
 section {
-    padding: 130px 105px 0;
-  }
+    padding: 130px 8vw 0px;
+}
 
 .container
 {
@@ -147,12 +156,18 @@ section {
 }
 
 .container-box{
-    border: 2px solid var(--primary-color);
+    border: 2px dashed var(--secondary-color);
     line-height: 2;
     padding: 5vw;
-    margin: 20px;
-    height: 75vh;
+    margin: 0 10px;
     width: 40vw;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+
+.my-list{
+    padding-left: 20px;
 }
 
 .container-box1 {
@@ -164,14 +179,7 @@ section {
     width: 40vw;
   }
 
-  .language-box{
-    border: 2px solid var(--primary-color);
-    line-height: 2;
-    padding: 5vw;
-    margin: 20px 0;
-    height: 30vh;
-    width: 40vw;
-  }
+  
 
 .my-image{
     object-fit: contain;
@@ -196,10 +204,10 @@ section {
     text-decoration: none;
 }
 
-.my-box{
+.my-box {
     background-color: var(--secondary-color);
-    padding: 10px 20px;
-    margin: 40px 10vw 10px;
+    padding: 6px 0;
+    margin: 30px 32vw 10px;
     border-radius: 7px;
 }
 
@@ -216,7 +224,7 @@ section {
 
 .my-input {
     padding: 15px;
-    margin: 20px 50px 0;
+    margin: 20px 17vw 0;
     background-color: var(--background-color);
     border: none;
       border-bottom-width: medium;
@@ -224,13 +232,13 @@ section {
       border-bottom-color: currentcolor;
     border-bottom: 5px solid var(--primary-color);
     color: var(--primary-color);
-    width: 50vw;
+    width: 48vw;
     display: block;
   }
 
   .submit-button {
     padding: 10px 65px;
-    margin: 55px 20vw 0;
+    margin: 55px 34vw 0;
     background-color: var(--secondary-color);
     border: none;
     border-radius: 5px;
@@ -244,7 +252,7 @@ section {
 
 .move-to-top{
     border: 2px solid var(--primary-color);
-    margin: 15px 200px 0;
+    margin: 0 30vw;
     padding: 12px 73px;
     height: 55px;
     text-align: center;
@@ -254,12 +262,21 @@ section {
 .my-video{
     width: 70vw;
     height: 50vh;
-    padding: 20px 40px;
-    margin: 0px 8px;
+    margin: 15px 46px;
+    border: 5px solid black;
 }
 
+.video-box{
+    padding: 0 20px;
+    margin: 0 0 30px;
+}
+
+
+
 .my-media{
-    padding: 0 9vw;
+    padding: 0 5vw;
+    margin: 20px 18vw;
+    background-color: black;
 }
 .icon-align{
     background-color: var(--primary-color);
@@ -314,6 +331,15 @@ section {
     display: block;
 }
 
+.language-box{
+    border: 2px solid var(--primary-color);
+  line-height: 2;
+  padding: 5vw;
+  margin: 20px 0;
+  height: 30vh;
+  width: 45vw;
+  }
+
 .langBtn {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -324,7 +350,18 @@ section {
     margin: 15px 0;
 }
 
+.about-text{
+    margin: 10px 5vw;
+}
+
 @media screen and (max-width: 600px) {
+
+    .my-input{
+        padding: 15px 25px;
+        width: 55vw;
+        margin: 50px 20vw 0;
+    }
+
     .my-header {
         padding: 10px 20px;
     }
@@ -355,9 +392,24 @@ section {
     }
 
     .another-header-text {
-        padding: 10px 0;
+        padding: 10px 43px 0 0;
         font-size: 18px;
         line-height: 1.7;
+    }
+
+    .container{
+        display: block;
+        margin: 10px;
+    }
+
+    .container-box{
+        width: 96vw;
+        margin: 10px 0;
+    }
+
+    .video-box{
+        padding: 20px;
+        margin: 0;
     }
 
     section {
@@ -365,42 +417,24 @@ section {
     }
 
     .sub-heading {
-        font-size: 50px;
+        font-size: 40px;
         font-family: Pirata One, monospace, sans-serif;
-        padding: 15px 15px 0;
+        padding: 15px;
         font-weight: unset;
     }
 
-    .container {
-        display:block;
-        margin: 20px;
-    }
-
-    .container-box {
-        margin: 0;
-        padding: 20px;
-        width: 93vw;
-        height: 46vh;
-    }
-
-    .container-box1{
-        padding: 20px;
-        margin: 0;
-        height: 95vh;
-        width: 93vw;
-    }
 
     .language-box{
         padding: 20px;
-        margin: 0;
+        margin: 0 10px;
         height: 30vh;
         width: 93vw;
     }
 
     .my-footer {
-        padding: 0 20px;
+        padding: 20px;
         text-align: center;
-        margin: 0 10px 50px;
+        margin: 0 10px 35px;
     }
 
     .icon-box {
@@ -410,7 +444,7 @@ section {
     }
 
     .move-to-top {
-        margin: 15px 38px 0;
+        margin: 10px 18vw 35px;
         padding: 12px 73px;
         height: 55px;
         text-align: center;
@@ -420,18 +454,35 @@ section {
         width: 85vw;
         height: 28vh;
         padding: 20px 12px;
-        margin: 0px 8px;
+        margin: 20px;
+        border: none;
     }
 
     .my-media {
         padding: 0 6vw;
+    }
+
+    .about-text {
+        margin: 0px 7vw;
+    }
+
+    .my-box {
+        background-color: var(--secondary-color);
+        padding: 7px;
+        margin: 30px 28vw;
+        border-radius: 7px;
+    }
+
+    .submit-button {
+        padding: 10px 56px;
+        margin: 55px 33vw 0;
     }
 }
 
 @media screen and (min-width: 600px) and (max-width:850px)
 {
     .move-to-top{
-        margin: 15px 100px 0;
+        margin: 0 25vw;
     }
     .another-header-text1 {
         font-size: 95px;
@@ -447,36 +498,69 @@ section {
         font-size: 33px;
     }
 
+    .another-header-text{
+        font-size: 20px;
+    }
+
     .container-box1 {
         height: 120vh;
         width: 52vw;
         margin: 0 19px;
     }
-    .language-box{
+    .language-box {
         margin: 0 19px;
         height: 30vh;
-        width: 52vw;
+        width: 78vw;
     }
     .langBtn{
         padding:10px 20px;
         background-color: var(--secondary-color);
         color: var(--background-color)
     }
-    .container-box{
-        width: 60vw;
-        height: 50vh;
+    
+    .sub-heading{
+        font-size: 50px;
     }
+
     .container{
         display: block;
     }
-    .another-header-text{
-        font-size: 16px;
-        padding: 0 205px 0 105px;
+
+    .container-box{
+        width: 83vw;
+        margin: 0 0 15px;
     }
+
     .my-video {
-        width: 65vw;
-        height: 38vh;
-        padding: 20px 21px;
-        margin: 0px;
+        width: 79vw;
+    height: 50vh;
+    margin: 15px 0 0;
+    }
+
+    .my-media{
+        padding: 5vw;
+        margin: 5vw;
+        background-color: black;
+    }
+
+    .my-input {
+        margin: 10px 10vw 0;
+        padding: 15px 15px;
+        width: 55vw;
+    }
+
+    .submit-button {
+        padding: 10px 65px;
+        margin: 55px 26vw 0;
+    }
+
+
+    .my-box {
+        padding: 7px 0vw;
+        margin: 22px 29vw;
+    }
+
+    .about-text {
+        margin: 10px 4vw 35px;
     }
 }
