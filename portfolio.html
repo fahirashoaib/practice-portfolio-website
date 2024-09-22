@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="description" content="Professional portfolio, showcasing projects, skills, and experience.">
     <meta name="keywords" content="portfolio, computer science, projects, HTML, CSS, JavaScript, C++, Python, ITU">
-    <script src="script.js" defer></script>
     <script async defer src="https://www.instagram.com/embed.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="my-header">
@@ -50,17 +52,17 @@
         <div  class="container">
             <div class="container-box">
                 <p>Courses I've taken:</p>
-                <ul>
+                <ul id="my-courses">
                     <li>Frontend Masters: Complete Intro to Web Development V3 by Brian Holt</li>
                     <li>Harvard University: HarvardCS50 by David J. Malan</li>
                     <li>Frontend Masters: The last Algorithms course you'll need by ThePrimeagen</li>
                     <li>FreeCodeCamp: HTML, CSS, Javascript</li>
-                    <li>Other courses are in progress...</li>
+                    <!-- <li>Other courses are in progress...</li> -->
                 </ul>
             </div>
             <div class="container-box">
                 <p>What I've learned practically: </p>
-                <ul>
+                <ul id="my-experience">
                     <li>Apprenticeship in Game designing from scratch in Unity at Mindstorm Studios</li>
                     <li>Coderush online coding competitin experience</li>
                 </ul>
@@ -72,7 +74,7 @@
         <div class="container">
             <div class="container-box">
                 <p>Developed these using HTML, CSS, and JavaScript during this summer 2024:</p>
-                <ul>
+                <ul id="html-css-js-projects">
                     <li>Cafe menu</li>
                     <li>Magazine</li>
                     <li>Registration Form</li>
@@ -81,21 +83,15 @@
             </div>
             <div class="container-box">
                 <p>Developed using Python in semester 2:</p>
-                <ul>
+                <ul id="python-projects">
                     <li>Paint App</li>
                 </ul>
-            </div>
-        </div>
-        <div class="container">
-            <div class="container-box">
                 <p>Developed using C# in semester 2:</p>
-                <ul>
+                <ul id="c#-projects">
                     <li>Calculator</li>
                 </ul>
-            </div>
-            <div class="container-box">
-            <p>Developed using C++ in semester 3:</p>
-                <ul>
+                <p>Developed using C++ in semester 3:</p>
+                <ul id="cpp-projects">
                     <li>Excel Sheet</li>
                     <li>DOS</li>
                     <li>Chess game</li>
@@ -108,14 +104,25 @@
     <section id="skills">
         <h2 class="sub-heading">Skills</h2>
         <div class="container">
-            <div class="container-box1">
-                <ul>
+            <div class="container-box">
+                <p>Soft Skills</p>
+                <ul id="soft-skills">
+                    <li>Communication</li>
+                    <li>Foreign Languages
+                        <ul class="inner-list-items">
+                            <li>Arabic (learning in progress)</li>
+                            <li>Turkish (learning in progress)</li>
+                            <li>German (learning in progress)</li>
+                        </ul>
+                    </li>
                     <li>Leadership</li>
                     <li>Teamwork</li>
-                    <li>Communication (written)</li>
                     <li>Adaptability</li>
                 </ul>
-                <ul>
+            </div>
+            <div class="container-box">
+                <p>Hard Skills</p>
+                <ul id="hard-skills">
                     <li>Programming
                         <ul class="inner-list-items">
                             <li>Python</li>
@@ -131,13 +138,6 @@
                             <li>HackerRank</li>
                         </ul>
                     </li>
-                    <li>Foreign Languages
-                        <ul class="inner-list-items">
-                            <li>Arabic (learning in progress)</li>
-                            <li>Turkish (learning in progress)</li>
-                            <li>German (learning in progress)</li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -145,18 +145,23 @@
     <section id="my-video">
         <h2 class="sub-heading">About my university</h2>
         <div class="container">
-            <iframe class="my-video" src="https://www.youtube.com/embed/cR4FyCFtr0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video-container1" class="my-video" src="https://www.youtube.com/embed/cR4FyCFtr0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="video-container2" class="container">
+
         </div>
     </section>
     <section id="my-social-feed">
         <h2 class="sub-heading">Social feed</h2>
-        <div class="container">
+        <div class="container" id="post-container1">
             <div class="my-media">
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C_xm5POR7aG/" data-instgrm-version="14">
                 <a href="https://www.instagram.com/p/C_xm5POR7aG/"></a>
             </blockquote>
             </div>
         </div>
+        <div class="container" id="post-container2"></div>
+        <div class="container" id="post-container3"></div>
     </section>
     <section id="change-language">
         <h2 class="sub-heading">Language</h2>
