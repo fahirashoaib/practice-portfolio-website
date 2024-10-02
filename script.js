@@ -28,52 +28,44 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Language menu handling
-    const langBtn = document.querySelector('.langBtn');
-    const languageContent = document.getElementById('languageContent');
-    const languageLinks = languageContent.querySelectorAll('a');
+});
 
-    // Toggle language dropdown on click
-    langBtn.addEventListener('click', function(event) {
-        event.preventDefault();
-        languageContent.classList.toggle('show');
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const langBtn = document.querySelector(".langBtn");
+    const languageContent = document.getElementById("languageContent");
+    const quoteElement = document.getElementById("quote");
+    
+    langBtn.addEventListener("click", function () {
+        // Toggle language content visibility
+        if (languageContent.style.display === "none" || languageContent.style.display === "") {
+            languageContent.style.display = "block"; // Show language options
+        } else {
+            languageContent.style.display = "none"; // Hide language options
+        }
     });
 
-    // Handle click event for each language link
-    languageLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const lang = this.getAttribute('data-lang');
+    // Change language when a language link is clicked
+    languageContent.addEventListener("click", function (event) {
+        if (event.target.tagName === "A") {
+            event.preventDefault(); // Prevent the default anchor click behavior
+            
+            const selectedLang = event.target.getAttribute("data-lang");
+            // Hide language options after selection
+            languageContent.style.display = "none"; 
+            // Update the quote based on the selected language
+            const quotes = {
+                en: '"The only limit to our realization of tomorrow is our doubts of today."',
+                es: '"El único límite para nuestra realización de mañana son nuestras dudas de hoy."',
+                fr: '"La seule limite à notre réalisation de demain est nos doutes d\'aujourd\'hui."'
+            };
 
-            // Change language by updating the text content
-            updateTextContent(lang);
-
-            // Optionally, close the language dropdown after a link is clicked
-            languageContent.classList.remove('show');
-        });
-    });
-
-    // Close the language dropdown if clicked outside
-    window.addEventListener('click', function(event) {
-        if (!langBtn.contains(event.target) && !languageContent.contains(event.target)) {
-            languageContent.classList.remove('show');
+            quoteElement.textContent = quotes[selectedLang] || quotes.en; // Default to English
         }
     });
 });
 
-function updateTextContent(lang) {
-    // Hide all quotes
-    const quotes = document.querySelectorAll('[data-lang]');
-    quotes.forEach(el => {
-        el.style.display = 'none';
-    });
-
-    // Show the selected language's quote
-    const selectedQuote = document.querySelector(`[data-lang="${lang}"]`);
-    if (selectedQuote) {
-        selectedQuote.style.display = '';
-    }
-}
 
 // Above code is handling button clicking events occuring on my webpage //
 
